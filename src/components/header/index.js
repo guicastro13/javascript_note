@@ -8,21 +8,27 @@ function Header() {
   return (
     <>
       <Navbar className="navbar navbar-dark bg-danger wh-100 header-height ">
-          <div className="container">
-            <Link to="/">
-              <img className=".navbar-brand w-25 h-auto" src={logoImage} alt="Logo do site" />
-            </Link>
-            </div>
-            <div className="d-flex gap-2 me-5">
-              <Link to="/register">
-                <button type="button" class="btn btn-outline-light">Register </button>
-              </Link>
-              <Link to="/login">
-                <button type="button" class="btn btn-outline-light">
-                  Login
-                </button>
-              </Link>
-            </div>
+        <div className="container">
+          <Link to="/">
+            <img
+              className=".navbar-brand w-25 h-auto"
+              src={logoImage}
+              alt="Logo do site"
+            />
+          </Link>
+        </div>
+        <div className="d-flex gap-2 me-5">
+          <Link to="/register">
+            <button type="button" className="btn btn-outline-light">
+              Register{" "}
+            </button>
+          </Link>
+          <Link to="/login">
+            <button type="button" className="btn btn-outline-light">
+              Login
+            </button>
+          </Link>
+        </div>
       </Navbar>
     </>
   );
